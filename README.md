@@ -144,4 +144,4 @@ npm run test:watch
 npm run test:cov
 ```
 
-Desenvolvido com ❤️ por [Daniel Werner](https://github.com/danielwerner-dev)
+Desenvolvido por [Daniel Werner](https://github.com/danielwerner-dev)
