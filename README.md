@@ -2,17 +2,31 @@
 
 Esta é uma API RESTful para gerenciamento de produtos e pedidos, construída com NestJS, PostgreSQL e seguindo os princípios SOLID.
 
-## Características
+## Endpoints da API
 
-- CRUD completo para produtos
-- Gerenciamento de pedidos
-- Autenticação JWT
-- Documentação com Swagger
-- Persistência de dados com PostgreSQL e TypeORM
-- Testes unitários
-- Logging de requisições
-- Arquitetura em camadas
-- Migrações de banco de dados
+A documentação completa da API está disponível através do Swagger em `/api` quando a aplicação estiver em execução.
+
+### Autenticação
+
+- `POST /auth/register`: Registrar um novo usuário
+- `POST /auth/login`: Autenticar usuário e obter token JWT
+
+
+### Produtos
+
+- `GET /produtos`: Lista todos os produtos
+- `GET /produtos/:id`: Busca um produto pelo ID
+- `POST /produtos`: Cria um novo produto (requer admin)
+- `PATCH /produtos/:id`: Atualiza um produto existente (requer admin)
+- `DELETE /produtos/:id`: Remove um produto (requer admin)
+
+
+### Pedidos
+
+- `GET /pedidos`: Lista todos os pedidos
+- `GET /pedidos/:id`: Busca um pedido pelo ID
+- `POST /pedidos`: Cria um novo pedido
+
 
 ## Arquitetura
 
@@ -117,31 +131,6 @@ $ npm run start:dev
 ```sql
 CREATE DATABASE products_api;
 ```
-
-## Endpoints da API
-
-A documentação completa da API está disponível através do Swagger em `/api` quando a aplicação estiver em execução.
-
-### Autenticação
-
-- `POST /auth/register`: Registrar um novo usuário
-- `POST /auth/login`: Autenticar usuário e obter token JWT
-
-
-### Produtos
-
-- `GET /produtos`: Lista todos os produtos
-- `GET /produtos/:id`: Busca um produto pelo ID
-- `POST /produtos`: Cria um novo produto (requer admin)
-- `PATCH /produtos/:id`: Atualiza um produto existente (requer admin)
-- `DELETE /produtos/:id`: Remove um produto (requer admin)
-
-
-### Pedidos
-
-- `GET /pedidos`: Lista todos os pedidos
-- `GET /pedidos/:id`: Busca um pedido pelo ID
-- `POST /pedidos`: Cria um novo pedido
 
 ## Testes
 ```
