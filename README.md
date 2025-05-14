@@ -7,8 +7,6 @@ Esta é uma API RESTful para gerenciamento de produtos e pedidos, construída co
 - CRUD completo para produtos
 - Gerenciamento de pedidos
 - Autenticação JWT
-- Controle de acesso baseado em funções (RBAC)
-- Validação de dados com class-validator
 - Documentação com Swagger
 - Persistência de dados com PostgreSQL e TypeORM
 - Testes unitários
