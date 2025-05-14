@@ -154,3 +154,5 @@ npm run test:watch
 # Executar testes com cobertura
 npm run test:cov
 ```
+
+Desenvolvido com ❤️ por [Daniel Werner](https://github.com/danielwerner-dev)
