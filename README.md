@@ -145,15 +145,12 @@ A documentação completa da API está disponível através do Swagger em `/api`
 
 ## Testes
 ```
-# Executar testes unitários
-$ npm run test
+# Executar todos os testes
+npm run test
 
 # Executar testes com watch mode
-$ npm run test:watch
+npm run test:watch
 
-# Executar testes e2e
-$ npm run test:e2e
-
-# Verificar cobertura de testes
-$ npm run test:cov
+# Executar testes com cobertura
+npm run test:cov
 ```
